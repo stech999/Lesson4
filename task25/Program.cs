@@ -1,6 +1,7 @@
 ﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4-> 16
+
 Console.Clear();
 
 void sq (int ehhh)
@@ -8,11 +9,10 @@ void sq (int ehhh)
     Console.Write("в какую степень будем возводить: ");
     int ooo = int.Parse(Console.ReadLine()!);
 
-    // string eee = ooo.ToString();
     int uuu = 1;
     for (int i = 0; i < ooo; i++)
     {
-        uuu = uuu * ehhh;
+        uuu *= ehhh;
     }
     Console.Write($"Ваше число {ehhh} в степни {ooo} будет {uuu}");
 }
